@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrona - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <div class="logo-area">
+                <img src="img/CARRONA.png.png" alt="Logo Carrona">
+                <div>
+                    <h1>Carrona</h1>
+                    <p>Transporte escolar inteligente e seguro</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-card">
+            <h2>Entrar na sua conta</h2>
+
+            <input type="email" placeholder="Digite seu e-mail para entrar">
+            <input type="password" placeholder="Digite sua senha por favor">
+
+            <button>ENTRAR</button>
+
+            <div class="extra">
+                Não tem conta? <a onclick="abrirModal()">Criar conta</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Carrona - 2º B, FEITO POR ALUNOS DO TOUFIC JOULIAN!
+    </footer>
+
+    <!-- MODAL -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <h3>🚧</h3>
+            <p>Cadastro ainda não disponível.<br>Disponível na próxima Sprint.</p>
+            <button onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        function abrirModal() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function fecharModal() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
